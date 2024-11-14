@@ -1,8 +1,6 @@
-# Named-Entity-Recognition
+# Named-Entity-Recognition (NER)
 
-# Named Entity Recognition (NER)
-
-This section introduces the fundamentals of Named Entity Recognition (NER), including a general definition, task modeling, and evaluation methods used for this task.
+This repository introduces the fundamentals of Named Entity Recognition (NER), including a general definition, task modeling, and evaluation methods used for this task.
 
 ## Definition
 
@@ -47,15 +45,10 @@ This table shows the differences between tagging schemes (IO, BIO, and BIOES) us
 
 NER model performance is typically measured with **Precision (P)**, **Recall (R)**, and the **F1 score**:
 
-\[
-P = \frac{TP}{TP + FP}
-\]
-\[
-R = \frac{TP}{TP + FN}
-\]
-\[
-F_{1} = \frac{2 \times R \times P}{R + P}
-\]
+**P** = <sup>TP</sup> / <sub>(TP + FP)</sub>
+**P** = <sup>TP</sup> / <sub>(TP + FN)</sub>
+**P** = <sup>2*R*P</sup> / <sub>(R+P)</sub>
+
 
 Where:
 - **True Positive (TP)**: Correctly identified entities
@@ -65,3 +58,7 @@ Where:
 Two primary evaluation settings for entity matching:
 1. **Exact-match (Strict)**: Both the entity type and boundaries must match exactly.
 2. **Relaxed-match (Overlap)**: Matches if boundaries overlap, counting an entity as a true positive if it shares half of its tokens with the gold standard.
+
+## External References
+
+For more detailed information on named entity recognition, see section 17.3 (page 367) of [Stanford's Speech and Language Processing book](https://web.stanford.edu/~jurafsky/slp3/ed3book.pdf)
