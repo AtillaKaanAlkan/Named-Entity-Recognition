@@ -20,7 +20,7 @@ In recent years, NER has expanded to include dates, temporal expressions, and ev
 
 ## Task Modelization
 
-NER can be framed as a sequence labeling task where tokens (words) in a text sequence are labeled with their corresponding entity types. Various tagging schemes are commonly used:
+The NER task can be modelled as a sequence labelling task, where the sequence consists of several tokens (words), and the tagger must assign the correct label to each token. As shown in the table below, various tagging schemes have been proposed. The standard approach to sequence labelling is the BIO tagging scheme. This method labels a sequence of tokens to capture both the boundary and the named entity type. In the BIO tagging scheme, tokens that begin a span of interest are labelled with B, tokens within a span are tagged with I, and tokens outside any span of interest are labelled O. The BIOES tagging scheme, on the other hand, adds an E tag for the end of a span and an S tag for spans consisting of a single token.
 
 - **BIO**: Beginning (B), Inside (I), and Outside (O)
 - **BIOES**: Adds End (E) and Single (S) tags for better boundary detection
