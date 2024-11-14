@@ -12,7 +12,7 @@ Named Entity Recognition (NER) involves identifying and labeling proper names wi
 
 In recent years, NER has expanded to include dates, temporal expressions, and even numerical expressions, which is particularly relevant in domains like astrophysics.
 
-### Examples of NER Model Output:
+#### Examples of NER Model Output:
 
 1. **Max Planck** [PER] was born in **Germany** [LOC] on **April 23, 1858** [DATE].
 2. Fundamental research in physics is conducted at **Max Planck** [ORG] in **Germany** [LOC].
